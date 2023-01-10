@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Todo-App-JS</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1 class="title">ToDo приложение на JavaScript</h1>
+        <div class="inner-container">
+          <div class="inner-container__select">
+            <select class="select" id="select">
+              <option value="active">Активные задачи</option>
+              <option value="done">Завершённые задачи</option>
+              <option value="deleted">Удалённые задачи</option>
+            </select>
+          </div>
+          <ul class="inner-container__tasksList tasks-list"></ul>
+          <div class="addNew-task">
+            <h2 class="addNew-task__title">Добавить новую задачу</h2>
+            <form id="form" class="addNew-task__form form" action="">
+              <input
+                id="input"
+                class="form__input"
+                type="text"
+                placeholder="Текст задачи"
+              />
+              <button id="send-btn" class="form__btn">
+                <img src="img/send.png" alt="send-btn" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

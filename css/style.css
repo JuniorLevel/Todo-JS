@@ -1,0 +1,171 @@
+@import "null.css";
+
+body {
+  font-family: Calibri, sans-serif;
+  background-color: gold;
+}
+.wrapper {
+  padding: 0 30px;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.5);
+  -moz-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.5);
+  box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.5);
+  margin: 100px auto;
+  max-width: 1200px;
+  min-height: 600px;
+}
+
+.title {
+  font-size: 40px;
+  text-align: center;
+  padding: 35px 0 150px 0;
+}
+
+.inner-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-bottom: 200px;
+}
+
+.inner-container__select {
+  text-align: end;
+}
+
+.select {
+  text-align: center;
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.select:hover {
+  cursor: pointer;
+}
+
+.tasks-list {
+  box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
+  padding: 10px 5px;
+  margin-bottom: 50px;
+}
+
+.tasks-list__item {
+  background-color: palegoldenrod;
+  min-height: 50px;
+  padding: 15px 0 10px 15px;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasks-list__item:hover .list__item-buttons {
+  padding-right: 10px;
+  padding-left: 10px;
+  display: block;
+  transition: all 5s ease;
+  z-index: 10;
+}
+
+.tasks-list__item:last-child {
+  margin: 0;
+}
+
+ul > li {
+  list-style: none;
+}
+
+.done {
+  transition: all 2s ease;
+  background-color: rgba(137, 238, 15, 0.88);
+}
+.done p {
+  text-decoration: line-through;
+}
+
+.list__empty-text {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.list__item-buttons {
+  display: none;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  width: 28px;
+  height: 28px;
+  background-color: white;
+}
+
+.btn img {
+  pointer-events: none;
+}
+
+.btn:hover {
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+
+.list__item-text {
+  flex: 1 1 50%;
+  font-size: 20px;
+}
+
+.addNew-task {
+  padding: 0 5px;
+}
+
+.addNew-task__title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 25px;
+  border: 1px solid #000000;
+}
+
+.form__input {
+  padding: 0 15px;
+  height: 50px;
+  flex: 1 1 auto;
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-family: Calibri, sans-serif;
+  font-size: 26px;
+}
+
+.form__input::placeholder {
+  color: grey;
+  font-family: Calibri, sans-serif;
+  font-size: 26px;
+}
+
+.form__btn {
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.form__btn:hover {
+  opacity: 0.3;
+}
